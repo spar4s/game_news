@@ -142,6 +142,32 @@ def cmd_process(args: argparse.Namespace) -> int:
                 )
                 if result["ai_enriched"] <= 0:
                     break
+
+            if aggregate["batches"] == 0:
+                result = process_articles(
+                    conn,
+                    ai_config=config.ai,
+                    ai_limit=0,
+                    refresh_ai=args.refresh_ai,
+                )
+                aggregate.update(result)
+                aggregate["batches"] = 1
+                aggregate["pending_ai"] = count_pending_ai_articles(conn, refresh_ai=args.refresh_ai)
+
+            if aggregate["batches"] == 0:
+                result = process_articles(
+                    conn,
+                    ai_config=config.ai,
+                    ai_limit=0,
+                    refresh_ai=args.refresh_ai,
+                )
+                aggregate["processed"] = result["processed"]
+                aggregate["duplicates"] = result["duplicates"]
+                aggregate["filtered"] = result["filtered"]
+                aggregate["ai_enriched"] = result["ai_enriched"]
+                aggregate["topics"] = result["topics"]
+                aggregate["batches"] = 1
+                aggregate["pending_ai"] = count_pending_ai_articles(conn, refresh_ai=args.refresh_ai)
     print(
         "Process complete: "
         f"processed={aggregate['processed']}, "
