@@ -1,0 +1,2 @@
+"""Game news bot package."""
+

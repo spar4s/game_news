@@ -1,0 +1,25 @@
+[project]
+name = "game-news-bot"
+version = "0.1.0"
+description = "A Horizon-inspired daily game news collector and digest generator."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Codex" }
+]
+dependencies = []
+
+[project.scripts]
+game-news = "game_news_bot.cli:main"
+game_news_bot = "game_news_bot.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["game_news_bot*"]

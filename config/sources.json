@@ -1,0 +1,100 @@
+{
+  "sources": [
+    {
+      "name": "PlayStation Blog",
+      "type": "rss",
+      "url": "https://blog.playstation.com/feed/",
+      "enabled": true,
+      "priority": 10,
+      "language": "en"
+    },
+    {
+      "name": "Xbox Wire",
+      "type": "rss",
+      "url": "https://news.xbox.com/en-us/feed/",
+      "enabled": true,
+      "priority": 9,
+      "language": "en"
+    },
+    {
+      "name": "Gematsu",
+      "type": "rss",
+      "url": "https://www.gematsu.com/feed",
+      "enabled": true,
+      "priority": 8,
+      "language": "en"
+    },
+    {
+      "name": "IGN",
+      "type": "rss",
+      "url": "https://feeds.ign.com/ign/games-all",
+      "enabled": true,
+      "priority": 8,
+      "language": "en"
+    },
+    {
+      "name": "GameSpot",
+      "type": "rss",
+      "url": "https://www.gamespot.com/feeds/mashup/",
+      "enabled": true,
+      "priority": 8,
+      "language": "en"
+    },
+    {
+      "name": "Rock Paper Shotgun",
+      "type": "rss",
+      "url": "https://www.rockpapershotgun.com/feed",
+      "enabled": true,
+      "priority": 7,
+      "language": "en"
+    },
+    {
+      "name": "Reddit /r/gaming",
+      "type": "rss",
+      "url": "https://www.reddit.com/r/gaming/.rss",
+      "enabled": true,
+      "priority": 5,
+      "language": "en"
+    },
+    {
+      "name": "Reddit /r/pcgaming",
+      "type": "rss",
+      "url": "https://www.reddit.com/r/pcgaming/.rss",
+      "enabled": true,
+      "priority": 6,
+      "language": "en"
+    },
+    {
+      "name": "Reddit /r/games",
+      "type": "rss",
+      "url": "https://www.reddit.com/r/games/.rss",
+      "enabled": true,
+      "priority": 6,
+      "language": "en"
+    },
+    {
+      "name": "Reddit /r/pcmasterrace",
+      "type": "rss",
+      "url": "https://www.reddit.com/r/pcmasterrace/.rss",
+      "enabled": true,
+      "priority": 4,
+      "language": "en"
+    },
+    {
+      "name": "Reddit /r/steam",
+      "type": "rss",
+      "url": "https://www.reddit.com/r/steam/.rss",
+      "enabled": true,
+      "priority": 5,
+      "language": "en"
+    },
+    {
+      "name": "Reddit /r/PS5",
+      "type": "rss",
+      "url": "https://www.reddit.com/r/PS5/.rss",
+      "enabled": true,
+      "priority": 5,
+      "language": "en"
+    }
+  ]
+}

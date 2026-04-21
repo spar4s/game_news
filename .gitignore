@@ -1,0 +1,13 @@
+.venv/
+.uv-cache/
+__pycache__/
+*.pyc
+
+build/
+data/
+*.db
+
+game_news_bot.egg-info/
+
+.DS_Store
+Thumbs.db

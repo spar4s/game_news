@@ -1,0 +1,25 @@
+{
+  "ai": {
+    "enabled": true,
+    "provider": "openai-compatible",
+    "base_url": "https://api.minimaxi.com/v1",
+    "chat_path": "/chat/completions",
+    "api_key": "",
+    "api_key_env": "MINIMAX_API_KEY",
+    "model": "MiniMax-M2.7",
+    "timeout_seconds": 60,
+    "max_articles_per_run": 8,
+    "max_batches_per_run": 2,
+    "extra_headers": {},
+    "extra_body": {}
+  },
+  "channel_profile": {
+    "name": "每日游戏资讯频道",
+    "focus": [
+      "主机",
+      "PC",
+      "行业动态"
+    ],
+    "max_digest_items": 12
+  }
+}
